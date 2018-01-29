@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
 
+    @IBOutlet var timeShowLabel: UILabel!
+    
+    @IBOutlet var RecordButton: UIButton!
+    
+    @IBOutlet var PlayButton: UIButton!
+    
+     @IBOutlet var StopButton: UIButton!
+    
+    var recorder:AVAUio
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        
+        
+        
+        
+        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func ShowRecorderButton(_ sender: UIButton) {
+    }
 
 }
 

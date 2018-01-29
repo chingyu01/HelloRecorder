@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048AC6BA201FE1C500D91253 /* RecorderDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AC6B9201FE1C500D91253 /* RecorderDetailTableViewController.swift */; };
+		048AC6BC201FE21700D91253 /* RecorderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AC6BB201FE21700D91253 /* RecorderDetailTableViewCell.swift */; };
 		04E67897201D6BDF006B7C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E67896201D6BDF006B7C63 /* AppDelegate.swift */; };
-		04E67899201D6BDF006B7C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E67898201D6BDF006B7C63 /* ViewController.swift */; };
 		04E6789C201D6BDF006B7C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E6789A201D6BDF006B7C63 /* Main.storyboard */; };
 		04E6789E201D6BE0006B7C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E6789D201D6BE0006B7C63 /* Assets.xcassets */; };
 		04E678A1201D6BE0006B7C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E6789F201D6BE0006B7C63 /* LaunchScreen.storyboard */; };
+		04E678A9201D768D006B7C63 /* RecorderMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E678A8201D768D006B7C63 /* RecorderMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048AC6B9201FE1C500D91253 /* RecorderDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderDetailTableViewController.swift; sourceTree = "<group>"; };
+		048AC6BB201FE21700D91253 /* RecorderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		04E67893201D6BDF006B7C63 /* HelloRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E67896201D6BDF006B7C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04E67898201D6BDF006B7C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04E6789B201D6BDF006B7C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04E6789D201D6BE0006B7C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E678A0201D6BE0006B7C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E678A2201D6BE0006B7C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E678A8201D768D006B7C63 /* RecorderMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				04E67896201D6BDF006B7C63 /* AppDelegate.swift */,
-				04E67898201D6BDF006B7C63 /* ViewController.swift */,
 				04E6789A201D6BDF006B7C63 /* Main.storyboard */,
+				048AC6BB201FE21700D91253 /* RecorderDetailTableViewCell.swift */,
+				048AC6B9201FE1C500D91253 /* RecorderDetailTableViewController.swift */,
+				04E678A8201D768D006B7C63 /* RecorderMainViewController.swift */,
 				04E6789D201D6BE0006B7C63 /* Assets.xcassets */,
 				04E6789F201D6BE0006B7C63 /* LaunchScreen.storyboard */,
 				04E678A2201D6BE0006B7C63 /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E67899201D6BDF006B7C63 /* ViewController.swift in Sources */,
+				048AC6BC201FE21700D91253 /* RecorderDetailTableViewCell.swift in Sources */,
+				048AC6BA201FE1C500D91253 /* RecorderDetailTableViewController.swift in Sources */,
+				04E678A9201D768D006B7C63 /* RecorderMainViewController.swift in Sources */,
 				04E67897201D6BDF006B7C63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +290,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D5NWSFDJ2;
 				INFOPLIST_FILE = HelloRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freya.HelloRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,11 +309,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D5NWSFDJ2;
 				INFOPLIST_FILE = HelloRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.freya.HelloRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.freya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
