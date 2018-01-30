@@ -180,7 +180,7 @@ class RecorderMainViewController: UIViewController{
         
         do {
             recorder = try AVAudioRecorder(url: soundFileURL, settings: recordSettings)
-            recorder.delegate = self
+            recorder.delegate = self as! AVAudioRecorderDelegate
             recorder.isMeteringEnabled = true
             recorder.prepareToRecord() // creates/overwrites the file at soundFileURL
         } catch {
@@ -556,9 +556,11 @@ class RecorderMainViewController: UIViewController{
 //    
 //}
 
+
+
  //MARK: AVAudioRecorderDelegate
-    
-    extension RecorderViewController: AVAudioRecorderDelegate {
+}
+  extension RecorderMainViewController: AVAudioRecorderDelegate {
 
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder,
                                          successfully flag: Bool) {
@@ -596,9 +598,10 @@ class RecorderMainViewController: UIViewController{
     }
 
   }
-}
+
+
 // MARK: AVAudioPlayerDelegate
-    extension RecorderViewController: AVAudioPlayerDelegate {
+extension RecorderMainViewController: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         print("\(#function)")
 
