@@ -93,9 +93,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RecodeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKT-Ui-QCO"/>
-                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fS-Mv-2DC"/>
-                                    <segue destination="jre-Wq-QiN" kind="show" id="xnm-Nk-6sa"/>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ai-bp-QtF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-RO-DVf">
@@ -105,7 +103,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mha-VJ-RoH"/>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2g-Pf-954"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfK-jo-HKH">
@@ -115,7 +113,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="ShowRecorderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSP-Ed-RLZ"/>
                                     <segue destination="jre-Wq-QiN" kind="show" id="Cr7-zF-0QC"/>
                                 </connections>
                             </button>
@@ -126,8 +123,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="myPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqq-jl-1zM"/>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEW-nQ-Fgc"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79e-fB-0H6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,7 +192,4 @@
     <resources>
         <image name="background-1" width="640" height="426"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="xnm-Nk-6sa"/>
-    </inferredMetricsTieBreakers>
 </document>
